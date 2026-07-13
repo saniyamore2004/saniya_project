@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+st.set_page_config(
+    page_title="Nassau Candy Distributor Dashboard",
+    page_icon="📊",
+    layout="wide"
+)
 
 st.title("Nassau Candy Distributor Dashboard")
 
@@ -181,6 +186,6 @@ st.write("✅ Sales vary across different ship modes.")
 st.write("✅ A few cities and states contribute a major share of total sales.")
 st.write("✅ Monthly sales trend helps identify seasonal business performance.")
 st.markdown("---")
-st.header("📌 Key Insights")
+
 st.markdown("---")
 st.success("✅ Data Analytics Dashboard Developed by Saniya More")
