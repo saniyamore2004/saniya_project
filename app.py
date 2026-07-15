@@ -9,12 +9,12 @@ df = pd.read_csv("Nassau Candy Distributor.csv")
 st.sidebar.header("Filters")
 
 selected_region = st.sidebar.selectbox(
-"Select Region",
-["All"] + list(df["Region"].unique())
+    "Select Region",
+    ["All"] + list(df["Region"].unique())
 )
 
 if selected_region != "All":
-df = df[df["Region"] == selected_region]
+    df = df[df["Region"] == selected_region]
 
 st.subheader("Dataset Preview")
 st.dataframe(df)
